@@ -1,3 +1,8 @@
+6.1.1 / 2016-11-25
+==================
+
+  * Bug fix - Drop redundant peer dependencies. Only React is needed.
+
 6.1.0 / 2016-11-25
 ==================
 
