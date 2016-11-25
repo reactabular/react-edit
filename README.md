@@ -1,3 +1,5 @@
+[![build status](https://secure.travis-ci.org/reactabular/react-edit.svg)](http://travis-ci.org/reactabular/react-edit) [![bitHound Score](https://www.bithound.io/github/reactabular/react-edit/badges/score.svg)](https://www.bithound.io/github/reactabular/react-edit) [![codecov](https://codecov.io/gh/reactabular/react-edit/branch/master/graph/badge.svg)](https://codecov.io/gh/reactabular/react-edit)
+
 # react-edit - Inline editing utilities for React
 
 `react-edit` provides a set of inline editing related utilities for React. The library comes with a couple of basic editors and you can implement your own as long as you follow the same interface (`value`, `onValue` props).
