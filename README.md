@@ -6,7 +6,7 @@
 
 ## API
 
-The `edit` transform has been designed to allow inline editing. It expects you to define how to manipulate the state. it also expects you to pass an editor.
+The `edit` transform has been designed to allow inline editing. It expects you to define how to manipulate the state. It also expects you to pass an editor.
 
 **Example:**
 
