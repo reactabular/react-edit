@@ -1,6 +1,6 @@
 {
   "name": "react-edit",
-  "version": "6.1.1",
+  "version": "6.2.0",
   "description": "Inline editing utilities for React",
   "scripts": {
     "test:all": "npm test && npm run test:lint",
