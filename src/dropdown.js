@@ -12,7 +12,7 @@ const dropdown = ({
     const edit = ({ target: { value } }) => onValue(value); // eslint-disable-line max-len, no-shadow, react/prop-types
 
     return (
-      <select onBlur={edit} onChange={edit} value={value} {...props}>
+      <select onBlur={edit} onChange={edit} value={value} autoFocus {...props}>
         {options.map((option, i) =>
           <option key={i} value={option[fields.value]}>
             {option[fields.name]}
