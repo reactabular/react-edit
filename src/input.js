@@ -1,4 +1,4 @@
-/* eslint-disable no-shadow */
+/* eslint-disable no-shadow, react/require-default-props */
 import React from 'react';
 import PropTypes from 'prop-types';
 
