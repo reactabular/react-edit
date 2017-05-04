@@ -1,5 +1,6 @@
 /* eslint-disable no-shadow */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const input = ({ props } = {}) => {
   const Input = ({ value, onValue }) => {
@@ -24,8 +25,8 @@ const input = ({ props } = {}) => {
     );
   };
   Input.propTypes = {
-    value: React.PropTypes.any,
-    onValue: React.PropTypes.func
+    value: PropTypes.any,
+    onValue: PropTypes.func
   };
 
   return Input;

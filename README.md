@@ -99,6 +99,7 @@ If you want to implement a custom editor, you should accept `value` and `onValue
 ```jsx
 /*
 import React from 'react';
+import PropTypes from 'prop-types';
 */
 
 const boolean = ({ props } = {}) => {
@@ -117,9 +118,9 @@ const boolean = ({ props } = {}) => {
     </div>
   );
   Boolean.propTypes = {
-    value: React.PropTypes.any,
-    onClick: React.PropTypes.func,
-    onValue: React.PropTypes.func
+    value: PropTypes.any,
+    onClick: PropTypes.func,
+    onValue: PropTypes.func
   };
 
   return Boolean;
