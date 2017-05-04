@@ -65,5 +65,8 @@
   },
   "peerDependencies": {
     "react": ">= 15.0.0 < 16.0.0"
-  }
+  },
+  "pre-push": [
+    "test:all"
+  ]
 }
