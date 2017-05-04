@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const boolean = ({ props } = {}) => {
   const Boolean = ({ value, onValue }) => (
@@ -16,8 +17,8 @@ const boolean = ({ props } = {}) => {
     </div>
   );
   Boolean.propTypes = {
-    value: React.PropTypes.any,
-    onValue: React.PropTypes.func
+    value: PropTypes.any,
+    onValue: PropTypes.func
   };
 
   return Boolean;

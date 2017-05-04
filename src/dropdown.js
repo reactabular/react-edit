@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const dropdown = ({
   options,
@@ -22,8 +23,8 @@ const dropdown = ({
     );
   };
   Dropdown.propTypes = {
-    value: React.PropTypes.string.isRequired,
-    onValue: React.PropTypes.func.isRequired
+    value: PropTypes.string.isRequired,
+    onValue: PropTypes.func.isRequired
   };
 
   return Dropdown;
