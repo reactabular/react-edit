@@ -9,7 +9,14 @@ const input = ({ props } = {}) => {
         onValue(parseValue(value));
       }
     };
-    const onBlur = ({ target: { value } }) => { // eslint-disable-line react/prop-types
+    const onBlur = (event) => { // eslint-disable-line react/prop-types
+      const { target: { value } } = event;
+
+      if (event.nativeEvent.explicitOriginalTarget &&
+        event.nativeEvent.explicitOriginalTarget === event.nativeEvent.originalTarget) {
+        return;
+      }
+
       onValue(parseValue(value));
     };
     const parseValue = v => (value === parseFloat(value) ? parseFloat(v) : v);

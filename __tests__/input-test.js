@@ -44,6 +44,37 @@ describe('edit.input', function () {
     expect(changedValue).toEqual(true);
   });
 
+  it('triggers onValue onBlur with firefox onClick issue', function () {
+    let changedValue = false;
+    const Input = input();
+    const result = TestUtils.renderIntoDocument(
+      <Wrapper>
+        <Input
+          value="name"
+          onValue={() => {
+            changedValue = true;
+          }}
+        />
+      </Wrapper>
+    );
+
+    const renderedInput = TestUtils.findRenderedDOMComponentWithTag(result, 'input');
+
+    renderedInput.value = 'foobar';
+
+    const nativeEvent = {
+      nativeEvent: {
+        explicitOriginalTarget: renderedInput,
+        originalTarget: renderedInput,
+        type: 'blur'
+      }
+    };
+
+    TestUtils.Simulate.blur(renderedInput, nativeEvent);
+
+    expect(changedValue).toEqual(false);
+  });
+
   it('triggers onValue onEnter', function () {
     let changedValue = false;
     const Input = input();
